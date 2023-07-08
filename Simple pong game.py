@@ -49,8 +49,6 @@ pen.hideturtle()
 pen.goto(0, 210)
 pen.write("Player A: 0 Player B: 0", align="center", font=("Courier", 24, "normal"))
 
-
-
 # Function 
 def paddle_a_up():
     y = paddle_a.ycor()
@@ -87,7 +85,6 @@ while True:
     ball.setx(ball.xcor() + ball.dx)
     ball.sety(ball.ycor() + ball.dy)
 
-
     # Border Checking 
     if ball.ycor() > 240:
         ball.sety(240)
@@ -115,7 +112,6 @@ while True:
     if (ball.xcor() > 440 and ball.xcor() < 450) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40)
         ball.setx(440)
         ball.dx *= -1 
-
 
     if (ball.xcor() > -440 and ball.xcor() < -450) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() -40)
         ball.setx(-440)
